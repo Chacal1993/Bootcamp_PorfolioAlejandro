@@ -1,0 +1,80 @@
+@import "variables";
+@import "mixin";
+@import "style_progressBar.scss";
+
+h2 {
+    color: $colorSection1;
+}
+.firstSection {
+    @include implementFlex(column, start, flex-end);
+    color: $colorFontSection1;
+    padding: 0 20px 0 0;
+    height: 63%;
+}
+.progressBar {
+    @include implementFlex(column, center, center);
+}
+
+.secondSection {
+    @include implementFlex(row, center, center);
+}
+.fourSection {
+    @include implementFlex(row, space-evenly, center);
+    padding: 10px;
+    height: 70%;
+}
+
+.bgColorNavbar {
+    background-color: $colorNavBar !important;
+}
+
+.section:nth-child(1) {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fbfbfb;
+    font-weight: bold;
+}
+
+.secondSection > img {
+    border-radius: 100%;
+    border-color: #3b697869;
+    border-style: inset;
+    max-width: 30%;
+}
+
+.secondSection div {
+    text-align: justify;
+    padding: 3%;
+}
+
+.secondSection {
+    padding: 5%;
+}
+
+.thirdSection {
+    @include implementFlex(row, space-evenly, center);
+    height: 70%;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+.fourSection img {
+    max-width: 80%;
+}
+
+.fourSection > * {
+    flex: 1;
+    text-align: center;
+}
+
+.card_proyect > a > img {
+    border-radius: 10px;
+}
+.card_proyect > a > img:hover {
+    border: 3px groove $colorSection1;
+}
