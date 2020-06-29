@@ -15,6 +15,11 @@ h2 {
   color: #e7dfd5;
 }
 
+h3 {
+  color: #e7dfd5;
+  font-style: italic;
+}
+
 .firstSection {
   display: flex;
   justify-content: start;
@@ -105,6 +110,31 @@ h2 {
 
 .card_proyect > a > img:hover {
   border: 3px groove #e7dfd5;
+}
+
+@media (max-width: 411px) {
+  .section:nth-child(1) {
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+  }
+
+  .secondSection,
+.fourSection {
+    flex-direction: column;
+  }
+
+  .thirdSection {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .secondSection p {
+    font-size: 1.2em;
+  }
+
+  .card_proyect:nth-child(1) {
+    margin-top: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

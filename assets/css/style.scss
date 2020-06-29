@@ -5,6 +5,11 @@
 h2 {
     color: $colorSection1;
 }
+
+h3 {
+    color: $colorSection1;
+    font-style: italic;
+}
 .firstSection {
     @include implementFlex(column, start, flex-end);
     color: $colorFontSection1;
@@ -77,4 +82,26 @@ h2 {
 }
 .card_proyect > a > img:hover {
     border: 3px groove $colorSection1;
+}
+
+@media (max-width: 411px) {
+    .section:nth-child(1) {
+        background-image: url("../img/bg2.jpg");
+        background-size: cover;
+    }
+    .secondSection,
+    .fourSection {
+        flex-direction: column;
+    }
+    .thirdSection {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .secondSection p {
+        font-size: 1.2em;
+    }
+    .card_proyect:nth-child(1) {
+        margin-top: 25px;
+    }
 }
