@@ -1,4 +1,3 @@
-
 new fullpage('#fullpage', {
     sectionsColor: ['#e7dfd5', '#84a9ac', '#3b6978', '#204051'],
 });

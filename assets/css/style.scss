@@ -28,6 +28,14 @@ h3 {
     padding: 10px;
     height: 70%;
 }
+#section5 {
+    background-color: $colorSection5;
+}
+.fivesSection {
+    @include implementFlex(row, space-evenly, center);
+    padding: 10px;
+    height: 70%;
+}
 
 .bgColorNavbar {
     background-color: $colorNavBar !important;
@@ -84,11 +92,27 @@ h3 {
     border: 3px groove $colorSection1;
 }
 
+#img1 {
+    width: 38%;
+}
+#img2 {
+    width: 58%;
+}
+#img3 {
+    width: 48%;
+}
+
 @media (max-width: 450px) {
     .section:nth-child(1) {
         background-image: url("../img/bg2.jpg");
         background-size: cover;
     }
+    .firstSection {
+        display: flex;
+        padding: 0;
+        align-items: flex-start;
+    }
+
     .secondSection,
     .fourSection {
         flex-direction: column;
@@ -97,6 +121,10 @@ h3 {
         flex-direction: column;
         justify-content: center;
     }
+    .fivesSection {
+        flex-direction: column;
+        padding-top: 60px;
+    }
 
     .secondSection p {
         font-size: 1.2em;
@@ -104,4 +132,18 @@ h3 {
     .card_proyect:nth-child(1) {
         margin-top: 25px;
     }
+    #img1 {
+        width: 30%;
+    }
+    #img2 {
+        width: 52%;
+    }
+    #img3 {
+        width: 43%;
+    }
+}
+
+.btn:focus {
+    box-shadow: none;
+    outline: 0px;
 }

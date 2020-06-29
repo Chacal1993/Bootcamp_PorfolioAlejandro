@@ -1,3 +1,9 @@
+/* c++: https://onion.io/wp-content/uploads/2017/09/cpp_logo.png
+java:https://cdn-images-1.medium.com/max/1200/1*xDQkGGucCJuaodZMfxmJwQ.png
+HTML:https://www.grupohernandezalba.com/wp-content/uploads/2018/05/600px-HTML5_Badge.svg_.png
+css: https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful-1/2048/5351_-_CSS3-512.png
+sass: https://cdn.freebiesupply.com/logos/thumbs/2x/sass-1-logo.png
+javaScript: https://www.easyprogramming.net/logo/js.png */
 .skill_bar {
   width: 300px;
   height: 30px;
@@ -45,6 +51,19 @@ h3 {
 }
 
 .fourSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  height: 70%;
+}
+
+#section5 {
+  background-color: #0c2633;
+}
+
+.fivesSection {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -112,10 +131,28 @@ h3 {
   border: 3px groove #e7dfd5;
 }
 
+#img1 {
+  width: 38%;
+}
+
+#img2 {
+  width: 58%;
+}
+
+#img3 {
+  width: 48%;
+}
+
 @media (max-width: 450px) {
   .section:nth-child(1) {
     background-image: url("../img/bg2.jpg");
     background-size: cover;
+  }
+
+  .firstSection {
+    display: flex;
+    padding: 0;
+    align-items: flex-start;
   }
 
   .secondSection,
@@ -128,6 +165,11 @@ h3 {
     justify-content: center;
   }
 
+  .fivesSection {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
   .secondSection p {
     font-size: 1.2em;
   }
@@ -135,6 +177,22 @@ h3 {
   .card_proyect:nth-child(1) {
     margin-top: 25px;
   }
+
+  #img1 {
+    width: 30%;
+  }
+
+  #img2 {
+    width: 52%;
+  }
+
+  #img3 {
+    width: 43%;
+  }
+}
+.btn:focus {
+  box-shadow: none;
+  outline: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
