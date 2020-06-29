@@ -112,7 +112,7 @@ h3 {
   border: 3px groove #e7dfd5;
 }
 
-@media (max-width: 411px) {
+@media (max-width: 450px) {
   .section:nth-child(1) {
     background-image: url("../img/bg2.jpg");
     background-size: cover;
