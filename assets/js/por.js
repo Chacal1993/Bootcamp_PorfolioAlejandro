@@ -8,6 +8,14 @@ function animacion() {
         move()
     }
 }
+function detectUrl() {
+    let bodyy = document.getElementsByTagName("body")
+    let classFullPage3 = document.getElementsByTagName("body").className
+    console.log(classFullPage3);
+    animacion();
+}
+
+ontouchmove = animacion
 onmousewheel = animacion
 
 var i = 0;
@@ -20,7 +28,6 @@ function move() {
             let id = setInterval(load, 20);
             let width = 1;
             let value = iterator.getAttribute('aria-valuenow');;
-            console.log(value)
             function load() {
                 if (width >= value) {
                     clearInterval(id);
